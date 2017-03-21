@@ -1,0 +1,111 @@
+Rain Game - notes:
+
+TO DO
+- fiddle with particle effects for rain
+- start working on sound mechanic
+- obviously work on art
+
+
+
+
+ - assets needed:
+ 	- imgs:
+ 		- backgrounds:
+ 			- screen w weather machine
+ 			- main forest
+ 			- forest w creek (forf boy)
+ 			- cave w sunlight (bat boy)
+ 			- barn? (kit cat?)
+ 			- up! a! tree!
+ 		- characters:
+ 			- player (customization eventually?)
+ 				-walk cycle?
+ 			- forf
+ 			- bat
+ 			- kit cat?
+ 		- sounds:
+ 			- rain (duh)
+ 			- lightning/thunder
+ 			- cat meow
+ 			- frog ribbit
+ 			- bat chirp
+ 			- machine hum
+ 			- clink (object pickup)
+ 			- rain on roof (2 different, barn and hayloft)
+ 				-also need outside vs. inside noises
+ 			- rain on stone
+ 			- creek
+ 			- rain dripping from tree
+ 		- objects:
+ 			- machine
+ 			- lil pieces (gems?)
+ 			- hay (pile covering cat, after cat runs away)
+ 			- reeds (covering frogf, after frog runs away)
+ 			- (eventually) lightning recharge meter
+
+
+- sequencing (can mostly be done out of order):
+	- start in main forest
+	
+	- gem 1: TREETOP
+		- listen for bigger drip of raindrops from tree leaves
+		- interact to climb tree
+		- new screen: TREETOP
+		- gem is on a branch making gem noise
+		- move over it and interact to collect
+		- gem appears on screen (in 'inventory')
+	
+	- gem 2: CREEK
+		- listen for rushing of creek
+		- interact to walk to its bank
+		- new screen: CREEK
+		- no gem noise, but frog on rock ribbiting
+		- move towards it and interact
+		- frog runs away, moves reeds, reveals gem making gem noise
+		- move over it and interact to collect
+		- gem appears on screen (in 'inventory')
+
+	- gem 3: CAVE
+		- listen for dripping of rain on stone 
+		- interact to enter cave
+		- new screen: CAVE INTERIOR
+		- no gem noise, but bat sleeping on ceiling + chirping
+		- move towards it and interact
+		- bat flies away, opens wings, drops gem
+		- move over it and interact to collect
+		- gem appears on screen (in 'inventory')
+
+	- gem 4: BARN
+		- listen for rain dripping onto roof
+		- interact to go into barn
+		- new screen: BARN INTERIOR
+		- gem is in the top of a barrel (sack of grain?) making noise
+		- move over to it and open barrel (sack of grain?)
+		- gem is on top, move over it and interact to collect
+		- gem appears on screen (in 'inventory')
+
+	- gem 5: HAYLOFT
+		- go over to ladder in barn
+		- interact to climb to hayloft
+		- kitten is in a pile of hay meowing
+		- move over to it and interact
+		- kitten pops out of hay, runs away, leaves a gem
+		- move over to it an dinteract to collect
+		- gem appears on screen (in 'inventory')
+
+	- end game
+		- door opens at the end of the barn when u get the last gem
+		- move through it to get to the machine
+			- maybe have to hear machine hum?
+		- interact to put gems in machine
+		- machine zaps the sky and stops rain
+
+		- ending cutscene without rain
+
+- controls:
+	- W: interact
+	- A: move left
+	- S: lightning
+	- D: move right
+			- eventually also map to arrow keys?
+
